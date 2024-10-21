@@ -4,10 +4,6 @@ A fully decentralized, blockchain-based network for IoT devices that allows auto
 
 ## Description
 
-### Mini Description
-A blockchain designed for IoT devices, enabling them to communicate and make decisions autonomously without reliance on central control, ensuring security, privacy, and scalability.
-
-### Full Description
 The IoT Blockchain Decentralized Network is an innovative platform designed to allow IoT devices to operate in a fully decentralized manner, without requiring any centralized control or government oversight. The network leverages a lightweight blockchain architecture, where each IoT device acts as a node, participating in the consensus and ensuring the security and autonomy of the system. Smart contracts facilitate interactions between devices, and the network is optimized for resource-constrained IoT devices using a low-latency and energy-efficient consensus algorithm.
 
 This solution offers several key benefits:
