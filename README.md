@@ -28,18 +28,10 @@ By integrating blockchain technology, we ensure that IoT systems remain transpar
 - **Energy Grids**: Efficient energy redistribution between IoT devices like solar panels and batteries, without reliance on energy providers.
 - **Healthcare**: Medical IoT devices that securely share data in real-time across networks of hospitals.
 
-## Technologies
-- **GoLang**: Backend development of the blockchain.
+## Technologies Goals
 - **Smart Contracts**: Used to define rules for interactions between IoT devices.
 - **Consensus Algorithm**: Lightweight algorithm optimized for resource-constrained IoT devices.
 - **Networking**: Peer-to-peer communication between IoT devices, forming the core of the decentralized network.
-
-## How to Run
-1. Clone the repository:
-
-2. Install dependencies:
-
-3. Start the network:
 
  ## Future Work
 - **Integration with existing IoT ecosystems**.
