@@ -1,8 +1,8 @@
 import { IBlock } from './block.ts'
 import { LinkedList } from './linkedlist.ts';
-import { Mempool, IMempool } from './mempool.ts';
+import { IMempool } from './mempool.ts';
 
-export interface IBlockchain{
+export interface IBlockchain {
 	chain: string; // ex: main, testnet
 	difficulty: number;
 	blocks: LinkedList<IBlock>;
@@ -22,17 +22,16 @@ export class Blockchain implements IBlockchain{
 	private adjustment_interval: number;
 	
 
-	constructor(chain_name: string){
+	constructor(chain_name: string, mempool: IMempool){
 		this.chain = chain_name;
 		this.difficulty = 1;
 		this.blocks = new LinkedList<IBlock>();
 		this.adjustment_interval = 2016;
-		this.mempool = new Mempool();
+		this.mempool = mempool;
 	}
 	
 	AddBlock(block: IBlock){
 		if(block.IsValid()){
-			console.log(block);
 			this.blocks.Add(block);
 			this.AdjustDifficulty();
 		}
@@ -73,7 +72,6 @@ export class Blockchain implements IBlockchain{
 	private AdjustDifficulty() {
         	const blockCount = this.blocks.Size();
 
-	        // Only adjust difficulty every 'adjustment_interval' blocks
         	if (blockCount % this.adjustment_interval === 0) {
 	        	const timestamps = this.GetLastNBlockTimestamps(this.adjustment_interval);
             		if (timestamps.length > 1) {
@@ -87,8 +85,6 @@ export class Blockchain implements IBlockchain{
 				if(newDifficulty - this.difficulty > 1){
 					this.difficulty++;
 				}
-			
-
                 		console.log(`New Difficulty: ${this.difficulty}`);
             		}
         	}	
@@ -99,7 +95,7 @@ export class Blockchain implements IBlockchain{
         	for (let i = start; i < this.blocks.Size(); i++) {
             		const block = this.blocks.Get(i)?.value;
             		if (block) {
-                		timestamps.push(block.timestamp); // Assuming each block has a `timestamp` property
+                		timestamps.push(block.timestamp);
             		}
         	}
         	return timestamps;

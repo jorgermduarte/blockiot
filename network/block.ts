@@ -48,7 +48,6 @@ export class Block implements IBlock {
 		this.nonce = nonce;
 		this.transactions = transactions;
 		this.CalculateHash();
-		//console.log("generated new block hash: " + this.block_hash);
 	}
 
 	Display(){
@@ -58,8 +57,6 @@ export class Block implements IBlock {
 
 	public IsValid(): boolean {
 		const target = '0'.repeat(this.difficulty);
-		//console.log(`expected target: ${target}`);
-		//console.log(this.block_hash);
     		if(this.block_hash.startsWith(target)){
 			return true;
 		}else{
