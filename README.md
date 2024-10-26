@@ -51,7 +51,7 @@ By integrating blockchain technology, we ensure that IoT systems remain transpar
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more details.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](ts/LICENSE) file for details.
 
 ## Tags
 `blockchain`, `IoT`, `decentralized`, `smart contracts`, `peer-to-peer`, `autonomous devices`, `privacy`, `smart cities`, `IoT security`
