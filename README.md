@@ -36,22 +36,12 @@ By integrating blockchain technology, we ensure that IoT systems remain transpar
 
 ## How to Run
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-repo/iot-blockchain.git
-    cd iot-blockchain
-    ```
 
 2. Install dependencies:
-    ```bash
-    go mod tidy
-    ```
 
 3. Start the network:
-    ```bash
-    go run main.go
-    ```
 
-## Future Work
+ ## Future Work
 - **Integration with existing IoT ecosystems**.
 - **Advanced privacy features, such as zero-knowledge proofs**.
 - **Support for additional types of IoT devices**.
@@ -64,4 +54,4 @@ Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTIN
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Tags
-`blockchain`, `IoT`, `decentralized`, `smart contracts`, `peer-to-peer`, `golang`, `autonomous devices`, `privacy`, `smart cities`, `IoT security`
+`blockchain`, `IoT`, `decentralized`, `smart contracts`, `peer-to-peer`, `autonomous devices`, `privacy`, `smart cities`, `IoT security`
